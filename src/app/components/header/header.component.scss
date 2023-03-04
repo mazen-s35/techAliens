@@ -1,0 +1,130 @@
+.header {
+    background-color: #2B3467;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 9%;
+    flex-wrap: nowrap;
+    .logo {
+        img {
+            width: 25%;
+        }
+    }
+    .list {
+        .links {
+            display: flex;
+            list-style: none;
+            li {
+                a {
+                    padding-right: 1rem;
+                    font-size: 1.1rem;
+                    color: #fff;
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+            }
+            li:hover {
+                color: #2F58CD;
+                transition: all .4s;
+            }
+        }
+    }
+}
+
+.textHeader {
+    h1 {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 2;
+    }
+    p {
+        color: #ddd;
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+    button {
+        padding: 10px 18px;
+        background-color: #2F58CD;
+        color: #fff;
+        font-size: 1.2rem;
+        border-radius: 17px;
+        border: none;
+        outline: none;
+    }
+    button:hover {
+        opacity: .6;
+    }
+}
+
+.menu {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.hero {
+    img {
+        animation: up-down 4s ease-in-out infinite alternate-reverse both;
+    }
+    @keyframes up-down {
+        0%,
+        100% {
+            transform: translateY(0rem);
+        }
+        50% {
+            transform: translateY(-6rem);
+        }
+    }
+}
+
+@media(max-width: 710px) {
+    nav .list {
+        display: none;
+    }
+    .show {
+        display: flex !important;
+        flex-wrap: wrap;
+        flex-direction: column;
+        position: absolute;
+        color: #222;
+        top: 6rem;
+        right: 0;
+        width: 100%;
+        background: #fff;
+        padding: 10px;
+    }
+    .show ul {
+        display: flex !important;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .show ul li a {
+        color: #222 !important;
+    }
+    .menu {
+        display: block;
+    }
+}
+
+@media(max-width: 636px) {
+    .imageAliens {
+        width: 27rem;
+    }
+}
+
+@media(max-width: 360px) {
+    .imageAliens {
+        width: 18rem;
+    }
+}
+
+@media(max-width: 431px) {
+    .imageAliens {
+        width: 22rem;
+    }
+}

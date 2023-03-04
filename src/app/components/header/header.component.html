@@ -1,0 +1,31 @@
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <img src="../../../assets/logo-removebg-preview.png" alt="logo-tech-aliens">
+        </div>
+        <div>
+            <span class="material-symbols-outlined menu" (click)="show()">menu</span>
+        </div>
+        <div class="list" [class.show]="open">
+            <ul class="links">
+                <li routerLink="/"><a>الرئيسية</a></li>
+                <li>
+                    <a href="#about">من نحن</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#connect">تواصل معنا</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col pt-4 textHeader">
+                <h1>Tech Aliens</h1>
+                <p>تعد شركة تك اليانز احد الشركات الرائدة في البرمجة بجميع انواعها من مواقع و موبايل ابلكشين و تطبيقات سطح المكتب و ايضا الخدمات الاخري مثل الجرافيك و التسويق الرقمي</p>
+                <button>تواصل معنا</button>
+            </div>
+            <div class="col hero">
+                <img src="../../../assets/19362653-removebg-preview.png" class="mb-4 imageAliens" alt="imageAliens">
+            </div>
+        </div>
+    </div>
+</header>

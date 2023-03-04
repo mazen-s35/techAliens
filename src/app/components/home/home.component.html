@@ -1,0 +1,50 @@
+<app-header></app-header>
+<!-- About Us Section -->
+<main class="pt-5">
+    <section class="about container pt-4" id="about">
+        <h2 class="text-center p-4">من نحن</h2>
+        <p>تضم شركة تك اليانز مجموعة من الخبراء في جميع التخصصات</p>
+        <p>إمتلاك موقع خاص بشركتك أو إمتلاك نظام متكامل لإدارة موارد شركتك أو حتى إمتلاك تطبيق سطح مكتب يقوم بالأعمال الروتينية اليومية أصبحت كلها من أهم الأمور التي يبحث عنها رجال الأعمال وأصحاب الأنشطة التجارية. وأيضا لا ننسى دور التسويق الرقمي فأساس كل
+            عمل ناجح هو التسويق بشكل مخطط وسليم. إذا كنت ترغب بالإستفادة من خدماتنا فلا تتردد <span><a href="#connect">بالتواصل معنا</a></span>.</p>
+    </section>
+    <!-- Services Section -->
+    <section class="services container pt-5" id="services">
+        <h3 class="text-center p-4">خدماتنا</h3>
+        <div class="row">
+            <div class="col" *ngFor="let item of serve">
+                <div class="card">
+                    <div class="card-body">
+                        <img [src]="item.image" style="width: 30px" [alt]="item.title">
+                        <h5 class="card-title">{{item.title}}</h5>
+                        <p class="card-text">{{item.content}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Cheose this website -->
+    <section class="cheose">
+        <div class="container pt-5">
+            <h6 class="headTitle">لماذا تختار Tech Aliens</h6>
+            <div class="row p-5">
+                <div class="col-lg-4 col-sm-12 box">
+                    <h6>خدمة عملاء ما بعد البيع</h6>
+                    <p>نقوم بعمل خدمة ما بعد البيع مع عملائنا حتي يتم الوصول الي افضل خدمة نستطيع توصليها للعميل</p>
+                </div>
+                <div class="col-lg-4 col-sm-12 box">
+                    <h6>التسليم في اسرع وقت</h6>
+                    <p>نعمل علي تسليم جميع مشاريعنا في اسرع وقت ممكن حتي نكسب ثقة عملائنا</p>
+                </div>
+                <div class="col-lg-4 col-sm-12 box">
+                    <h6>افضل مهندسين</h6>
+                    <p>لدينا افضل مهندسين في جميع التخصصات حتي نتمكان من الوصول الي افضل منتج ممكن للعميل</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Connect with us -->
+    <section>
+        <app-connect></app-connect>
+    </section>
+</main>
+<app-footer></app-footer>
